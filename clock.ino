@@ -51,8 +51,6 @@ void setup()   {
   // display.setContrast (0); // dim display
   display.display();
   delay(1000);
-
-  // Clear the buffer.
   display.clearDisplay();
 
   // testdrawtriangle();
@@ -63,56 +61,19 @@ void setup()   {
   // delay(1000);
   // display.clearDisplay();
 
-  // text display tests
-  // display.setTextSize(1);
-  // display.setTextColor(SH110X_WHITE);
-  // display.setCursor(0, 12);
-  // display.println("Failure is always an option");
-  // display.setTextColor(SH110X_BLACK, SH110X_WHITE); // 'inverted' text
-  // display.println(3.141592);
-  // display.setTextSize(2);
-  // display.setTextColor(SH110X_WHITE);
-  // display.print("0x");
-  // display.println(0xDEADBEEF, HEX);
-  // display.display();
-  // delay(2000);
-  // display.clearDisplay();
-
-  // invert the display
-  // display.invertDisplay(true);
-  // delay(1000);
-  // display.invertDisplay(false);
-  // delay(1000);
-  // display.clearDisplay();
-
-  //Serial.begin(9600);
   Serial.println("Start");
-  
-  // запуск датчика и проверка на работоспособность
   if (!bme.begin(0x76)) Serial.println("Error!");
-
 }
 
 
 void loop() {
-  // // температура
-  // Serial.print("Temperature: ");
-  // Serial.println(bme.readTemperature());
-  // // влажность
-  // Serial.print("Humidity: ");
-  // Serial.println(bme.readHumidity());
-  // давление
-  // Serial.print("Pressure: ");
-  // Serial.println(bme.readPressure());
-  // Serial.println();
-  // delay(1000);
-
   display.setCursor(0, 12);
   display.setTextSize(2);
   display.setTextColor(SH110X_WHITE);
   display.println(bme.readTemperature());
   display.setTextSize(1);
   display.println("    ");
+
   // display.setTextColor(SH110X_BLACK, SH110X_WHITE); // 'inverted' text
   display.setTextSize(2);
   display.println(bme.readHumidity());
