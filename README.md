@@ -1,14 +1,38 @@
 # SierraClock
 
-Arduino-based clock/weather display for Ford Sierra vehicles. Displays temperature and humidity readings on an OLED screen.
+Arduino-based clock/weather display for Ford Sierra vehicles. Displays time, temperature and humidity on an OLED screen with SIERRA logo.
+
+## Features
+
+* Clock with time setting
+* Temperature and humidity display (BME280)
+* SIERRA logo
+* About screen
+
+## Apps
+
+| App | Description |
+|-----|-------------|
+| Clock | Time display, OK to set time |
+| Weather | Temperature and humidity |
+| About | Author info |
+| Logo | SIERRA logo |
+
+## Buttons
+
+| Button | Label | Function |
+|--------|-------|----------|
+| BTN1 (D2) | OK (h) | Select / increment hours |
+| BTN2 (D3) | NEXT (min) | Navigate / switch to minutes |
 
 ## Hardware Requirements
 
 * Arduino Nano/Micro
 * BME280/BMP280 temperature/humidity/pressure sensor (I2C address: `0x76`)
 * SH1106G OLED display 128x64 (I2C address: `0x3C`)
+* 2 buttons
 
-## I²C Connections
+## I2C Connections
 
 | Pin | Arduino |
 |-----|---------|

@@ -95,7 +95,7 @@ void setup() {
   display.clearDisplay();
   display.drawBitmap(0, 16, sierra_logo, SIERRA_LOGO_WIDTH, SIERRA_LOGO_HEIGHT, SH110X_WHITE);
   display.display();
-  delay(1000);
+  delay(5000);
   display.clearDisplay();
 
   Serial.println("Start");
