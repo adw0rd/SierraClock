@@ -2,6 +2,8 @@
 
 Arduino-based clock/weather display for Ford Sierra vehicles. Displays time, temperature and humidity on an OLED screen with SIERRA logo.
 
+![Sierra Clock Demo](https://github.com/adw0rd/SierraClock/blob/main/sierra-clock-avr.gif?raw=true)
+
 ## Features
 
 * Clock with time setting
