@@ -86,3 +86,8 @@ arduino-cli upload -p /dev/cu.wchusbserial110 --fqbn arduino:avr:nano clock/cloc
 ### SH110X OLED (e.g. SH1106)
 
 ![image](https://github.com/adw0rd/SierraClock/assets/546889/10c34021-ec50-4217-a3f8-5bb827581ed5)
+
+
+-------
+
+<img width="481" height="107" alt="image" src="https://github.com/user-attachments/assets/ce91530d-b20d-433c-91ad-11fb6fe10560" />
